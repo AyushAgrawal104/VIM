@@ -1,4 +1,8 @@
-    " here i am making >  as a leader in vimrc 
+"" This is My .vimrc file which i wrote by hit and trile method 
+" I Take help from Internet and some other vimrc on github
+"
+"
+" here i am making >  as a leader in vimrc 
 let mapleader=">"                     "till no use   new
 "
 "
