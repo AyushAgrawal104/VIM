@@ -1,6 +1,5 @@
 
-"This is my perticular vimrc and many stuf in this vimrc is learned from
-"Internet or taken from other vimrc."   
+"   
 "
 "
 ""
@@ -80,7 +79,7 @@ set wildmenu
 "
 ""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""Esc""""""""""""""""
-inoremap jj <Esc>
+inoremap jj <Esc>:w<CR>
 nnoremap J <nop>
 " Esc is not Disable due to visual mode leaving
 inoremap  <nop>
@@ -194,6 +193,7 @@ nnoremap f $
 "
 au FileType java :call Java()
 au BufRead,BufNewFile *.txt  :call Text()
+    au FileType python :call Python()
 "
 "
 "
@@ -233,5 +233,17 @@ endfunction
 "
 function! Text()
     setlocal spell
+    inoremap *** <Esc>xxxi***<Esc>25.o
+    inoremap >>> <Tab><Tab>>>>  
+    "Above 2 lines for notes purpose
 endfunction
-    
+"
+"
+"
+"""""""""""""""""""""""""""""""""""""""""""""""PYTHON""""""""""""""""""""""""""""""""
+function! Python()
+    cnoremap pym r ~/vimsppnits/pym <CR>
+endfunction
+"
+""
+"
